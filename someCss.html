@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Xinru Zhang</title>
+		<style>
+			#firstPar {
+				font-family: "Times New Roman";
+				font-style: normal;
+			}
+			#secondPar {
+				font-family: "Lucida Console";
+				font-style: italic;
+			}
+			#color {
+				color:#FF00FF;
+				background-color: #00FF00;
+			}
+			.img {
+				width:50px;
+				height:50px;
+			}
+			.middle {
+				text-align:center;
+			}
+			.center {
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+			}
+			.container {
+				position: relative;
+				text-align: center;
+			}
+			#margin {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			#dottedLine {
+				border-style: dotted;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="level1" class="middle">
+			<p>Level 1.1: Two paragraphs that each hvae a different font:</p>
+			<p id="firstPar">First font</p>
+			<p id="secondPar">Second font</p>
+			<p>Level 1.2: Two pictures that were origianlly different sizes, resized to 50px by 50px:</p>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2_MiAXqN7zFELIwfAqgEt2mPEmHM22d5lm4-vu67OH7K11n7d" class="img">
+			<img src="https://static.seattletimes.com/wp-content/uploads/2016/03/30cb9544-f07f-11e5-ae64-37565fbe3d99-1020x680.jpg" class="img">
+			<p id="color">Changing word color and background color!</p>
+		</div>
+		<div id="level2" class="middle">
+			<div id="level2.1" class="container">
+				<p>Level 2.1: Text that is centered on a photo</p>
+				<img src="https://media.istockphoto.com/photos/butterfly-at-sunset-picture-id507031708?k=6&m=507031708&s=612x612&w=0&h=81WzSTOJtI8AkxXTRNdT936tdEiSkJoYgjbsZK2Ge0M=">
+				<div class="center">Enjoy the spring!</div>
+			</div>
+			<div id="level2.2" id="margin"> 
+				<p>Level 2.2: A photo with 20 pixel margins on each side</p>
+				<img src="https://i.ytimg.com/vi/kxfeTcty3Do/maxresdefault.jpg" style="height:450px;width:650px">
+			</div> 
+			<div id="level2.3"> 
+				<p id="dottedLine">Level 2.3: Text with a border that uses dotted lines</p>
+			</div>
+		</div>
+		<div id="level3" class="middle">
+
+		</div>
+	</body>
+</html>
