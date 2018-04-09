@@ -2,46 +2,7 @@
 <html>
 	<head>
 		<title>Xinru Zhang</title>
-		<style>
-			#firstPar {
-				font-family: "Times New Roman";
-				font-style: normal;
-			}
-			#secondPar {
-				font-family: "Lucida Console";
-				font-style: italic;
-			}
-			#color {
-				color:#FF00FF;
-				background-color: #00FF00;
-			}
-			.img {
-				width:50px;
-				height:50px;
-			}
-			.middle {
-				text-align:center;
-			}
-			.center {
-				position:absolute;
-				top:50%;
-				left:50%;
-				transform:translate(-50%,-50%);
-			}
-			.container {
-				position: relative;
-				text-align: center;
-			}
-			#margin {
-				margin-top: 20px;
-				margin-bottom: 20px;
-				margin-left: 20px;
-				margin-right: 20px;
-			}
-			#dottedLine {
-				border-style: dotted;
-			}
-		</style>
+		<link rel="stylesheet" href="anExternal.css">
 	</head>
 	<body>
 		<div id="level1" class="middle">
@@ -67,8 +28,24 @@
 				<p id="dottedLine">Level 2.3: Text with a border that uses dotted lines</p>
 			</div>
 		</div>
-		<div id="level3" class="middle">
-
+		<div id="level3">
+			<p class="middle">Level 3.1: An external style sheet</p>
+			<div id="level3.2"> 
+				<p class="middle">Level 3.2: A floated element</p>
+				<p>
+					<img src="http://img.plantphoto.cn/imgf/l/1228422" id="float">
+					Viola prionantha is a violet species . Viola prionantha included in the genus violets , and the family violet plants.<br>
+					Subspecies:<br>
+					The species is divided into the following subspecies:<br>
+					V. p. Confusa<br>
+					V. p. Jaunsariensis<br>
+					V. p. Prionantha<br>
+				</p>
+			</div>
+			<div class="prionantha">
+				<p>Level 3.3: An element with rounded border corners</p>
+				<img src="https://pfaf.org/Admin/PlantImages/ViolaPrionantha.jpg">
+			</div>
 		</div>
 	</body>
 </html>
